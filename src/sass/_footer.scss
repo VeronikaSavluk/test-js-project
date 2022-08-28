@@ -1,0 +1,53 @@
+.footer-page {
+font-weight: 400;
+color: #545454;
+justify-content: center;
+@media screen and (max-width:767px) {
+    display: grid;
+    grid-template-columns: 70px 2fr;
+    align-self: end;
+    justify-items: start;
+    font-size: 14px;
+    line-height: 1.14;
+}
+@media screen and (min-width:768px) {
+    display: flex;
+    font-size: 16px;
+    line-height: 1.19;
+}
+}
+
+.developer-year {
+    margin: 0;
+    margin-left: auto;
+    padding: 0 5px;
+@media screen and (max-width:767px) {
+    justify-self: end;
+}
+}
+
+.options {
+    margin: 0;
+    display: flex;
+    padding: 0 5px;
+    border-left: 0.5px solid #000000;
+    border-right: 0.5px solid #000000;
+}
+.option:not(:last-child) {
+    margin-right: 5px;
+}
+
+.developer {
+    margin: 0;
+    margin-right: auto;
+    padding: 0 5px;
+@media screen and (max-width:767px) {
+    margin-top: 10px;
+    grid-column: 1/3;
+    align-self: start;
+    justify-self: start;
+}
+}
+.developer__link{
+    text-decoration: underline;
+}
