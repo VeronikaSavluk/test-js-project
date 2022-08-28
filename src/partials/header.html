@@ -1,12 +1,26 @@
-<header class="overlay">
-    <div class="header-nav">
-        <p>Filmoteka</p>
-        <button>Home</button>
-        <button>My librery</button>
-    </div>
-    <label for="search">
+<header class="section overlay">
+    <ul class="header-items list">
+        <li class="header-item">
+        <div class="header-logo">
+            <svg width="24" height="24">
+                <use href="./images/icons.svg#logo"></use>
+            </svg>
+            <p class="header-logo__text">Filmoteka</p>
+        </div>
+        </li>
+        <li class="header-item">
+            <button class="header-nav__btn btn">Home</button>
+            <button class="header-nav__btn btn">My librery</button>
+        </li>
+    </ul>
+    <label class="header-search-field" for="search">
         <input type="text" name="search" id="search" placeholder="Пошук фільмів">
+        <svg width="12" height="12">
+            <use href="./images/icons.svg#search"></use>
+        </svg>
     </label>
-    <button>Watched</button>
-    <button>Queue</button>
+    <button class="header-choise__btn btn">Watched</button>
+    <button class="header-choise__btn btn">Queue</button>
+
+
 </header>
