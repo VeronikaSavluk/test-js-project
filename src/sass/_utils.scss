@@ -1,1 +1,31 @@
 $primery-text-color: #FFFFFF;
+$primery-font-famaly: Roboto, sans-serif;
+$primery-font-weight: 500;
+$accent-color: #FF6B08;
+body {
+font-family: $primery-font-famaly;
+font-weight: $primery-font-weight;
+}
+.section {
+@media screen and (max-width:767px) {
+    padding: 20px;
+}
+
+@media screen and (min-width:768px) {
+    padding: 60px 70px;
+}
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.accent {
+    color: $accent-color;
+}
+.list {
+    list-style: none;
+}
+.btn {
+    border-radius: 4px;
+}

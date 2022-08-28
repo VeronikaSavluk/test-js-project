@@ -1,4 +1,5 @@
 header {
+    padding-top: 48px;
     height: 230px;
     font-weight: 500;
     font-size: 30px;
@@ -25,26 +26,67 @@ header {
     background-image: linear-gradient(to right,
             rgba(0, 0, 0, 0),
             rgba(0, 0, 0, 0.56)),
-        url('../images/header_1024.png');
+        url('../images/header_1024.jpg');
 
     @media screen and (min-width:320px) {
         background-image: linear-gradient(to right,
                 rgba(0, 0, 0, 0),
                 rgba(0, 0, 0, 0.56)),
-            url('../images/header_320.png');
+            url('../images/header_320.jpg');
     };
 
     @media screen and (min-width:768px) {
         background-image: linear-gradient(to right,
                 rgba(0, 0, 0, 0),
                 rgba(0, 0, 0, 0.56)),
-            url('../images/header_768.png');
+            url('../images/header_768.jpg');
     };
 
     @media screen and (min-width:1024px) {
         background-image: linear-gradient(to right,
                 rgba(0, 0, 0, 0),
                 rgba(0, 0, 0, 0.56)),
-            url('../images/header_1024.png');
+            url('../images/header_1024.jpg');
     };
+}
+
+.header-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    line-height: 1.17;
+}
+
+.header-logo__text{
+    margin: 0;
+    margin-left: 12px;
+@media screen and (max-width: 767px) {
+    display: none;
+}}
+.header-search-field {
+    border: none;
+    border-bottom: 0.5px solid #ffffff;
+    background-color: transparent;
+@media screen and (min-width:320px) {
+width: 280px;
+}
+@media screen and (min-width:768px) {
+width: 336px;
+}
+}
+.header-nav__btn {
+    font-size: 12px;
+    line-height: 1.17;
+    color: $primery-text-color;
+    text-transform: uppercase;
+    border: transparent;
+    background-color: transparent;
+}
+.header-nav__btn:first-child{
+    margin-right: 40px;
 }
