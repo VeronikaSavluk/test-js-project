@@ -1,4 +1,4 @@
-<header class="section overlay">
+<header class="header-page section overlay">
     <ul class="header-items list">
         <li class="header-item">
         <div class="header-logo">
@@ -9,18 +9,20 @@
         </div>
         </li>
         <li class="header-item">
-            <button class="header-nav__btn btn">Home</button>
-            <button class="header-nav__btn btn">My librery</button>
+            <button class="header-nav__btn">Home</button>
+            <button class="header-nav__btn">My librery</button>
         </li>
     </ul>
     <label class="header-search-field" for="search">
-        <input type="text" name="search" id="search" placeholder="Пошук фільмів">
-        <svg width="12" height="12">
+        <input class="header-search__input" type="text" name="search" id="search" placeholder="Пошук фільмів">
+        <button class="header-search__btn" width="12" height="12">
+            <svg width="12" height="12">
             <use href="./images/icons.svg#search"></use>
-        </svg>
+            </svg>
+        </button>
     </label>
-    <button class="header-choise__btn btn">Watched</button>
-    <button class="header-choise__btn btn">Queue</button>
+    <button class="header-choise__btn">Watched</button>
+    <button class="header-choise__btn">Queue</button>
 
 
 </header>

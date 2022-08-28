@@ -1,25 +1,23 @@
-header {
+.header-page {
+    position: sticky;
     padding-top: 48px;
-    height: 230px;
     font-weight: 500;
     font-size: 30px;
-    line-height: 35px;
+    line-height: 1.17;
     color: $primery-text-color;
-
-    @media screen and (min-width:320px) {
-        width: 320px;
-    }
-
-    @media screen and (min-width:768px) {
-        width: 768px;
-    }
-
-    @media screen and (min-width:1024px) {
-        width: 1024px;
-    }
+@media screen and (min-width:320px) {
+    min-width: 320px;
+}
+@media screen and (min-width:768px) {
+    min-width: 768px;
+}
+@media screen and (min-width:1024px) {
+    min-width: 1024px;
+}
 }
 
 .overlay {
+    margin-left: 0 auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -28,21 +26,21 @@ header {
             rgba(0, 0, 0, 0.56)),
         url('../images/header_1024.jpg');
 
-    @media screen and (min-width:320px) {
+    @media screen and (min-width: 320px) {
         background-image: linear-gradient(to right,
                 rgba(0, 0, 0, 0),
                 rgba(0, 0, 0, 0.56)),
             url('../images/header_320.jpg');
     };
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
         background-image: linear-gradient(to right,
                 rgba(0, 0, 0, 0),
                 rgba(0, 0, 0, 0.56)),
             url('../images/header_768.jpg');
     };
 
-    @media screen and (min-width:1024px) {
+    @media screen and (min-width: 1024px) {
         background-image: linear-gradient(to right,
                 rgba(0, 0, 0, 0),
                 rgba(0, 0, 0, 0.56)),
@@ -68,25 +66,44 @@ header {
 @media screen and (max-width: 767px) {
     display: none;
 }}
-.header-search-field {
-    border: none;
-    border-bottom: 0.5px solid #ffffff;
-    background-color: transparent;
-@media screen and (min-width:320px) {
-width: 280px;
-}
-@media screen and (min-width:768px) {
-width: 336px;
-}
+
+.header-nav__btn,
+.header-search__input,
+.header-search__btn {
+background-color: transparent;
+border: transparent;
 }
 .header-nav__btn {
     font-size: 12px;
     line-height: 1.17;
     color: $primery-text-color;
     text-transform: uppercase;
-    border: transparent;
-    background-color: transparent;
 }
 .header-nav__btn:first-child{
     margin-right: 40px;
+}
+.header-search-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    border-bottom: 0.5px solid #ffffff;
+@media screen and (min-width: 320px) {
+    width: 280px;
+}
+@media screen and (min-width: 768px) {
+    width: 336px;
+}
+}
+.header-search__input,
+.header-search__btn {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+}
+.header-search__input {
+    width: 100%;
+}
+.header-choise__btn {
+    display: none;
 }
