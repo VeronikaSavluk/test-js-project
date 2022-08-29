@@ -2,6 +2,16 @@ $primery-text-color: #FFFFFF;
 $primery-font-famaly: Roboto, sans-serif;
 $primery-font-weight: 500;
 $accent-color: #FF6B08;
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+input,
+button,
+textarea {
+font-family: inherit;
+}
 body {
 font-family: $primery-font-famaly;
 font-weight: $primery-font-weight;
