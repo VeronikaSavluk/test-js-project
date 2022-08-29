@@ -1,6 +1,7 @@
 .footer-page {
 font-weight: 400;
 color: #545454;
+background-color: #F7F7F7;;
 justify-content: center;
 @media screen and (max-width:767px) {
     display: grid;
@@ -18,7 +19,6 @@ justify-content: center;
 }
 
 .developer-year {
-    margin: 0;
     margin-left: auto;
     padding: 0 5px;
 @media screen and (max-width:767px) {
@@ -27,7 +27,6 @@ justify-content: center;
 }
 
 .options {
-    margin: 0;
     display: flex;
     padding: 0 5px;
     border-left: 0.5px solid #000000;
@@ -38,7 +37,6 @@ justify-content: center;
 }
 
 .developer {
-    margin: 0;
     margin-right: auto;
     padding: 0 5px;
 @media screen and (max-width:767px) {
