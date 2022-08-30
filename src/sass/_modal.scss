@@ -1,0 +1,48 @@
+.backdrop {
+@media screen and (min-width: 320px) {
+    padding: 20;
+}
+@media screen and (min-width: 768px) {
+    padding: 231px 75px;
+}
+@media screen and (min-width: 1024px) {
+    padding: 100px 71px;
+}
+}
+
+.modal__button--close {
+    width: 30px;
+    height: 30px;
+}
+.modal__options {
+    display: flex;
+}
+.modal__option:not(:last-child) {
+    margin-right: 15px;
+}
+.modal__option-btn{
+
+    height: 44px;
+    font-size: 12px;
+    line-height: 1.3;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: #000000;
+    text-transform: uppercase;
+@media screen and (min-width: 320px) {
+    width: 113px;
+}
+@media screen and (min-width: 768px) {
+    width: 125px;
+}
+@media screen and (min-width: 1024px) {
+    width: 136px;
+}
+}
+.modal__option-btn:hover,
+.modal__option-btn:focus {
+    background-color: $accent-color;
+    color: $primery-text-color;
+    border: $accent-color;
+}
+
