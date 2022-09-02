@@ -1,0 +1,2 @@
+!function(){var t,e={gallery:document.querySelector(".gallery"),buttons:document.querySelector(".pages"),page:1,totalPages:10};t=Array(e.totalPages).fill().map((function(t,e){return"<button data-page=".concat(e,">").concat(e+1,"</button>")})).join(" "),e.buttons.innerHTML="",e.buttons.insertAdjacentHTML("beforeend","".concat(t)),e.buttons.addEventListener("click",(function(t){e.page=t.target.dataset.page}))}();
+//# sourceMappingURL=my-library.6c1de634.js.map

@@ -1,0 +1,2 @@
+const t={gallery:document.querySelector(".gallery"),buttons:document.querySelector(".pages"),page:1,totalPages:10};!function(){const e=Array(t.totalPages).fill().map(((t,e)=>`<button data-page=${e}>${e+1}</button>`)).join(" ");t.buttons.innerHTML="",t.buttons.insertAdjacentHTML("beforeend",`${e}`)}(),t.buttons.addEventListener("click",(function(e){t.page=e.target.dataset.page}));
+//# sourceMappingURL=my-library.40334151.js.map
