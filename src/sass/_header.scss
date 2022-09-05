@@ -1,6 +1,6 @@
 // =================Page "Home"============
-.home .header-page,
-.my-library .header-page {
+.home .header-page .container,
+.my-library .header-page .container {
     overflow-x: hidden;
     position: sticky;
     color: $primery-text-color;
@@ -111,6 +111,7 @@
 .my-library .header-nav__btn,
 .home .header-search__input,
 .home .header-search__btn {
+    color: inherit;
     background-color: transparent;
     border: transparent;
 }
@@ -158,10 +159,6 @@
     }
 }
 
-.home .header-search__btn:active {
-    display: none;
-}
-
 .home .header-search__input::placeholder {
     color: $primery-text-color;
     font-weight: 400;
@@ -171,7 +168,10 @@
 .home .header-search__input {
     width: 100%;
 }
-
+.home .incorrect-movie-name {
+    color: red;
+    text-align: center;
+}
 // ===========Page "My library"=================
 .my-library .overlay {
     background-size: cover;
