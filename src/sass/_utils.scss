@@ -16,19 +16,24 @@ body {
 font-family: $primery-font-famaly;
 font-weight: $primery-font-weight;
 }
-.section {
+.container {
 @media screen and (max-width:767px) {
+    min-width: 320px;
     padding: 20px;
 }
 
 @media screen and (min-width:768px) {
-    padding: 60px 70px;
+    min-width: 768;
+    padding: 60px 32px;
+}
+@media screen and (min-width:768px) {
+    min-width: 1024px;
 }
 }
 img {
     display: block;
     max-width: 100%;
-    height: auto;
+    max-height: 100%;
 }
 th {
 font-size: 12px;
