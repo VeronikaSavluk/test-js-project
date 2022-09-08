@@ -1,6 +1,3 @@
-// .gallery {
-
-// }
 .gallery-items {
     display: grid;
     align-items: baseline;
@@ -29,6 +26,18 @@ text-transform: uppercase;
     margin-top: 8px;
 }
 }
-.pages {
-    display: flex;
+#tui-pagination-container strong {
+    background: $accent-color;
+    border-color: $accent-color;
+}
+#tui-pagination-container .tui-page-btn {
+    width: 40px;
+    height: 40px;
+    padding: 13px 11px;
+    border-color: transparent;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.33;
 }
