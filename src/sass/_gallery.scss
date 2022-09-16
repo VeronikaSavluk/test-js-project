@@ -1,4 +1,9 @@
-.gallery-items {
+.library__item.is-hidden {
+    display: none;
+}
+
+.gallery-items,
+.library__item {
     display: grid;
     align-items: baseline;
 @media screen and (min-width: 320px) {
@@ -16,10 +21,14 @@
 }
 }
 
-.gallery-card__info {
+.gallery-card__info,
+.library-watched-card__info,
+.library-queue-card__info {
     color: $accent-color;
 }
-.gallery-card__title {
+.gallery-card__title,
+.library-watched-card__title,
+.library-queue-card__title {
 margin-top: 10px;
 text-transform: uppercase;
 @media screen and (min-width: 768px) {
