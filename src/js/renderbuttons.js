@@ -10,7 +10,7 @@ export default function renderButtons() {
     // refs.buttons.innerHTML = "";
     // refs.buttons.insertAdjacentHTML('beforeend', `${buttons}`);
     const options = {
-    totalItems: refs.totalPages,
+    totalItems: refs.totalPages * 10,
     itemsPerPage: 10,
     visiblePages: 5,
     centerAlign: true
