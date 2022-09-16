@@ -1,6 +1,7 @@
 export const refs = {
     form: document.querySelector("#search-form"),
     gallery: document.querySelector(".gallery-items"),
+    library: document.querySelector(".library .gallery-items"),
     movieCards: document.querySelectorAll(".gallery-card"),
     buttons: document.querySelector("#tui-pagination-container"),
     API_key: `4acb7b5ad40671c4d36a93ebc82fda39`,
@@ -11,4 +12,7 @@ export const refs = {
     movies: null,
     movieGenre: null,
     movieId: null,
+    watchedMovies: [],
+    queueMovies: [],
+    libraryPost: null,
 }
