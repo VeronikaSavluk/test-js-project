@@ -3,10 +3,13 @@ import renderHeaderPage from './js/renderheaderpage';
 import createRequest from './js/createrequest';
 import renderMoviesCards from './js/rendermoviescards';
 import renderButtons from './js/renderbuttons';
+import onMovieCardClick from './js/modal';
 
 renderHeaderPage();
 
+refs.gallery.addEventListener("click", onMovieCardClick);
 refs.form.addEventListener("submit", onSearchBtnSubmit);
+
 function onSearchBtnSubmit(e) {
     e.preventDefault();
     refs.gallery.innerHTML = "";
@@ -34,5 +37,6 @@ function onSearchBtnSubmit(e) {
 
 refs.buttons.addEventListener("click", onButtonClick);
 function onButtonClick(e) {
-    refs.page = e.target.dataset.page;
+    // refs.page = e.target.dataset.page;
+    // console.log(page);
 };
